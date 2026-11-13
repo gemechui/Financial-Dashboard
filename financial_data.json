@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "title": "Financial Statement Deep Analysis",
+    "subtitle": "FY2023 – FY2026 (Audited)",
+    "period_ends": ["7-Jul-23", "7-Jul-24", "7-Jul-25", "7-Jul-26"],
+    "fiscal_years": ["FY2023", "FY2024", "FY2025", "FY2026"],
+    "currency_note": "Currency unit not specified in source document. All figures as reported in audited financial statement.",
+    "source": "User-uploaded audited financial statement image",
+    "report_date": "13 November 2026",
+    "prepared_by": "Z.ai Analytics"
+  },
+
+  "balance_sheet": {
+    "Property, plant & equipment": [31300000.00, 28600000.00, 25900000.00, 35244500.00],
+    "Stock (Inventory)": [420000.00, 570000.00, 1071501.00, 6320000.00],
+    "Trade & other receivables": [132000.00, 254500.00, 1324500.00, 3245600.00],
+    "Cash & bank balances": [885837.00, 1685837.00, 1849098.00, 3889654.31],
+    "Profit tax payable": [743649.00, 1149020.00, 3457502.00, 11822413.59],
+    "Non-current liability": [0.00, 0.00, 0.00, 21958371.18],
+    "Paid-up capital": [1000000.00, 1000000.00, 1000000.00, 500000.00],
+    "Owners' account": [29561697.00, 26775994.00, 19215093.00, 14418969.54],
+    "Retained earnings (carry-forward)": [1432491.00, 2185323.00, 6472504.00, 0.00]
+  },
+
+  "balance_sheet_subtotals": {
+    "Total non-current assets": [31300000.00, 28600000.00, 25900000.00, 35244500.00],
+    "Total current assets": [1437837.00, 2510337.00, 4245099.00, 13455254.31],
+    "Total assets": [32737837.00, 31110337.00, 30145099.00, 48699754.31],
+    "Total current liabilities": [743649.00, 1149020.00, 3457502.00, 11822413.59],
+    "Total non-current liabilities": [0.00, 0.00, 0.00, 21958371.18],
+    "Total liabilities": [743649.00, 1149020.00, 3457502.00, 33780784.77],
+    "Total equity": [31994188.00, 29961317.00, 26687597.00, 14918969.54],
+    "Total liabilities & equity": [32737837.00, 31110337.00, 30145099.00, 48699754.31]
+  },
+
+  "income_statement": {
+    "Total Revenue": [21200000.00, 26400000.00, 44251500.00, 69000000.00],
+    "Cost of sales": [15518000.00, 19407500.00, 30390499.00, 29251501.00],
+    "General & administrative expense": [805860.00, 958157.00, 1230995.00, 5899888.74],
+    "Finance cost": [0.00, 3334343.00, 9930006.00, 2861688.74],
+    "Depreciation": [2700000.00, 2700000.00, 2700000.00, 2200000.00],
+    "Provision for tax": [743649.00, 1149020.00, 3457502.00, 11822413.59]
+  },
+
+  "income_statement_subtotals": {
+    "Gross profit": [5682000.00, 6992500.00, 13861001.00, 39748499.00],
+    "EBITDA (source-reported)": [4876140.00, 6034343.00, 12630006.00, 33848610.26],
+    "Profit before tax (source-reported)": [2176140.00, 3334343.00, 9930006.00, 33848610.26],
+    "Profit after tax (net income)": [1432491.00, 2185323.00, 6472504.00, 22026196.67]
+  },
+
+  "methodology_notes": [
+    "EBITDA per source = Gross Profit - General & Administrative Expense (Depreciation shown as separate line, NOT in EBITDA).",
+    "PBT values are source-reported. FY23-FY25 follow PBT = EBITDA - Depreciation (finance cost not deducted).",
+    "FY2026 anomaly: PBT = EBITDA exactly (33,848,610.26), indicating neither Depreciation nor Finance Cost was deducted in source.",
+    "PAT = PBT - Provision for tax. Verified internally consistent across all four years.",
+    "All balance sheet identities hold: Total Assets = Total Liabilities + Total Equity for every fiscal year."
+  ],
+
+  "ratios": {
+    "profitability": {
+      "Gross profit margin": [0.2680, 0.2649, 0.3132, 0.5761],
+      "EBITDA margin": [0.2300, 0.2286, 0.2854, 0.4906],
+      "Operating margin (PBT/Revenue)": [0.1026, 0.1263, 0.2244, 0.4906],
+      "Net profit margin": [0.0676, 0.0828, 0.1463, 0.3192],
+      "Effective tax rate": [0.3417, 0.3446, 0.3482, 0.3493]
+    },
+    "liquidity": {
+      "Current ratio (x)": [1.9335, 2.1848, 1.2278, 1.1381],
+      "Quick ratio (x)": [1.3687, 1.6887, 0.9179, 0.6035],
+      "Cash ratio (x)": [1.1912, 1.4681, 0.5351, 0.3289],
+      "Working capital": [694188.00, 1361317.00, 787597.00, 1632840.72]
+    },
+    "leverage": {
+      "Debt-to-equity (x)": [0.0232, 0.0384, 0.1296, 2.2643],
+      "Debt-to-assets (x)": [0.0227, 0.0369, 0.1147, 0.6937],
+      "Equity multiplier (x)": [1.0233, 1.0384, 1.1296, 3.2643],
+      "Interest coverage (EBITDA/Finance, x)": [null, 1.8098, 1.2719, 11.8282]
+    },
+    "efficiency": {
+      "Asset turnover (x)": [0.6476, 0.8486, 1.4680, 1.4168],
+      "Inventory turnover (x)": [36.9524, 34.0509, 28.3712, 4.6294],
+      "Receivables turnover (x)": [160.6061, 103.733, 33.4234, 21.2574],
+      "Days sales outstanding (DSO)": [2.2727, 3.5205, 10.9201, 17.1689],
+      "Days inventory outstanding (DIO)": [9.8776, 10.7194, 12.866, 78.866]
+    },
+    "returns": {
+      "Return on assets (ROA)": [0.0438, 0.0702, 0.2148, 0.4523],
+      "Return on equity (ROE)": [0.0448, 0.0729, 0.2426, 1.4762],
+      "Return on capital employed": [0.0660, 0.1034, 0.3723, 0.9435]
+    }
+  },
+
+  "growth": {
+    "yoy": {
+      "Total Revenue": [null, 0.2453, 0.6758, 0.5593],
+      "Gross profit": [null, 0.2310, 0.9852, 1.8682],
+      "EBITDA": [null, 0.2372, 1.0936, 1.6785],
+      "Net income": [null, 0.5259, 1.9621, 2.4031],
+      "Total assets": [null, -0.0497, -0.0311, 0.6157],
+      "Total equity": [null, -0.0635, -0.1093, -0.4410],
+      "Cash": [null, 0.9037, 0.0967, 1.1030]
+    },
+    "cagr_3yr": {
+      "Total Revenue": 0.4839,
+      "Gross profit": 0.9127,
+      "EBITDA": 0.9103,
+      "Net income": 1.4872,
+      "Total assets": 0.1419,
+      "Total equity": -0.2263,
+      "Cash": 0.6310
+    },
+    "total_change_pct": {
+      "Total Revenue": 2.2547,
+      "Gross profit": 5.9952,
+      "EBITDA": 5.9410,
+      "Net income": 14.3857,
+      "Total assets": 0.4872,
+      "Total equity": -0.5336,
+      "Cash": 3.3913
+    },
+    "indexed_base_100": {
+      "Revenue": [100, 124.5, 208.7, 325.5],
+      "Gross profit": [100, 123.1, 244.0, 699.6],
+      "EBITDA": [100, 123.7, 259.1, 694.1],
+      "Net income": [100, 152.6, 451.9, 1538.0],
+      "Total assets": [100, 95.0, 92.1, 148.7],
+      "Total equity": [100, 93.7, 83.4, 46.6]
+    }
+  },
+
+  "headline_findings": [
+    {
+      "id": 1,
+      "title": "Explosive revenue growth with margin acceleration",
+      "detail": "Revenue expanded from 21.2M to 69.0M over three years (CAGR 48.4%), accompanied by even more pronounced margin expansion. Gross margin climbed from 26.8% to 57.6%, while net margin expanded from 6.8% to 31.9% — signaling either a fundamental shift in product/service mix, significant pricing power realization, or a step-change in cost efficiency at scale.",
+      "severity": "positive"
+    },
+    {
+      "id": 2,
+      "title": "Net income grew 15x, driven by FY26 inflection",
+      "detail": "Net income moved from 1.43M in FY23 to 22.03M in FY26 — a 15.4x increase. The FY26 jump (net income more than tripled YoY) was enabled by a sharp drop in cost-of-sales ratio from 68.7% to 42.4% in a single year, an unprecedented 26-point gain.",
+      "severity": "positive"
+    },
+    {
+      "id": 3,
+      "title": "Capital structure transformed by new long-term debt in FY26",
+      "detail": "FY26 introduces a non-current liability of 21.96M where none previously existed. Combined with rising current tax liabilities (11.82M vs 3.46M in FY25), total liabilities jumped from 3.46M to 33.78M. The debt-to-equity ratio moved from 0.13x to 2.26x — a leveraged expansion (likely funding the PP&E rise from 25.9M to 35.2M).",
+      "severity": "warning"
+    },
+    {
+      "id": 4,
+      "title": "Liquidity is adequate but deteriorating",
+      "detail": "Current ratio declined from 1.94x in FY23 to 1.14x in FY26; cash ratio fell to 0.33x. Current liabilities grew 15.9x while current assets grew only 9.4x. The bulk of current liabilities is tax payable (11.82M), suggesting the company must ensure adequate cash conversion to meet near-term tax obligations.",
+      "severity": "warning"
+    },
+    {
+      "id": 5,
+      "title": "Return metrics exceptional but partly leverage-inflated",
+      "detail": "ROE reached 147.6% in FY26 (up from 4.5% in FY23) and ROA reached 45.2%. ROE is magnified by simultaneous equity contraction (owners' drawdown from 29.6M to 14.4M) and the introduction of debt. Asset turnover improved from 0.65x to 1.42x, indicating operational efficiency gains are genuinely strong.",
+      "severity": "positive"
+    }
+  ],
+
+  "recommendations": [
+    {
+      "horizon": "Immediate (0-3 months)",
+      "action": "Validate the FY26 margin breakthrough by reviewing detailed cost-of-sales compositions. Establish debt service schedule and confirm covenant terms. Develop a 13-week cash flow forecast that explicitly models the 11.82M tax obligation payment timing."
+    },
+    {
+      "horizon": "Short-term (3-12 months)",
+      "action": "Implement monthly working capital tracking with DSO, DIO, and DPO metrics. Stress-test the capital structure against a 20-30% revenue contraction scenario. Review inventory composition to identify any slow-moving or obsolete items in the 6.32M balance."
+    },
+    {
+      "horizon": "Medium-term (1-2 years)",
+      "action": "Develop a capital allocation framework balancing debt service, reinvestment, and owner distributions. Evaluate whether the FY26 PP&E expansion is generating expected revenue/efficiency returns. Establish formal credit policies for receivables management."
+    },
+    {
+      "horizon": "Long-term (2+ years)",
+      "action": "Develop a refinancing strategy for long-term debt well in advance of maturity. Consider whether the current capital structure remains optimal as the business continues to scale. Benchmark profitability and efficiency metrics against industry peers."
+    }
+  ]
+}
